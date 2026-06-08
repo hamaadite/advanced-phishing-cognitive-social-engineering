@@ -1,0 +1,62 @@
+Advanced Phishing and Cognitive Social Engineering
+Deconstructive Threat Modeling and Deception Psychology for the AI Era
+
+Author: Muhammad Hamaad Farid  
+Role: Cybersecurity Engineer  
+
+---
+
+1. Executive Summary
+This repository hosts a comprehensive presentation and seminar module focusing on advanced phishing vectors, cognitive vulnerabilities, and the systematic breakdown of traditional identity roots of trust in the AI era. It serves as a technical resource for security engineers, incident responders, and security awareness trainers.
+
+2. Core Frameworks and Theoretical Foundations
+
+Dual-Process Cognitive Theory
+This section analyzes how adversaries intentionally design high-stress or urgent workflows (e.g., critical HR actions) to overwhelm a target's working memory. [cite_start]This forces a cognitive fallback from slow, analytical System 2 validation directly into fast, error-prone System 1 heuristics[cite: 8].
+
+Heuristic-Systematic Model (HSM)
+[cite_start]This model details how threat actors exploit cognitive minimization rules to bypass rigorous validation[cite: 10]. Key vectors evaluated include:
+[cite_start] Authority: Forged executive infrastructure and communications[cite: 10].
+[cite_start] Scarcity and Urgency: Artificial countdowns imposed on critical technical or financial systems[cite: 11].
+[cite_start] Social Proof:** Synthesized historical authorization chains[cite: 12].
+
+Evolution of Threat Vectors
+[cite_start] Phase 1 (Commodity Bulk): Untargeted, massive-volume emails easily caught by traditional signature-based Secure Email Gateways (SEGs)[cite: 15, 17].
+[cite_start] Phase 2 (AI-Driven Spear Phishing): Hyper-personalized phishing orchestrated via Large Language Models (LLMs) and automated open-source intelligence (OSINT) scraping pipelines[cite: 18, 19].
+[cite_start] Phase 3 (Deep Contextual Hijacking): Threat actors compromise upstream supply chains or vendor mailboxes to inject malicious payloads directly into authentic, active, historical corporate communication threads[cite: 21, 22, 23].
+
+3. Technical Deep Dives Covered
+
+Adversary-in-the-Middle (AiTM)
+[cite_start] Mechanics:Deployment of live, reverse-proxy infrastructures (such as Evilginx) acting as an inline relay between the victim and the legitimate Identity Provider (IdP)[cite: 27].
+[cite_start] Session Hijacking: Rather than stealing passwords, the proxy intercepts and captures the authenticated session token (cookie) post-MFA challenge, bypassing multi-factor checkpoints entirely[cite: 28, 33].
+
+OAuth Consent Phishing
+[cite_start] Mechanics:Malicious application registration within Azure AD or Google Workspace environments (e.g., masked as trusted internal tools)[cite: 35, 37].
+[cite_start] Impact: Victims grant API read/write scopes via legitimate OAuth modals[cite: 38]. [cite_start]The attacker receives persistent access/refresh tokens that survive password resets and standard MFA rotations until manually revoked[cite: 39].
+
+Emrgent Exploits
+[cite_start] Quishing (QR Code Phishing):Embedding malicious URLs inside dynamically compiled graphics to evade SEG text parsers, optical character recognition (OCR), and network proxy decryption by forcing a cross-device shift to personal mobile devices[cite: 43, 44, 45, 46].
+[cite_start] MFA Fatigue / Prompt Bombing: High-frequency push notification flooding leveraging systematic behavioral habituation to force user compliance out of disruption avoidance[cite: 47, 48, 49].
+
+Generative AI Case Study
+[cite_start] The $25.6M Deepfake Incident: A real-world deconstruction of the multi-layered validation trap where an employee was deceived by real-time synthesized audiovisual assets of a CFO and corporate peers during a live video conference[cite: 51, 53, 54, 55].
+
+4. Enterprise Defensive Countermeasures
+1. [cite_start] Cryptographic Identity Roots: Transitioning strictly to FIDO2 / WebAuthn compliance (hardware security keys, system-level biometric passkeys) to bind public-key validation tokens directly to the browser domain registry, rendering AiTM proxies useless[cite: 59, 60].
+2. [cite_start] OAuth Access Governance: Enforcing directory boundaries against unverified third-party integrations and deploying automated inventory scripts for token pruning[cite: 61, 62, 63].
+3. [cite_start] Out-of-Band Verification: Decoupling critical financial or administrative operations from sensory confirmation (voice/video) by mandating pre-shared cryptographic verification or multi-party distributed signatures[cite: 64, 65].
+
+---
+
+5. Repository Contents
+[cite_start]`Phishing_Awareness_Training_Module.pptx` — Full structural slide deck including lecture notes, attack architecture wireframes, and interactive seminar incident modeling cases[cite: 67].
+
+6. Academic Literature and References
+- Kahneman, D. (2011). Thinking, Fast and Slow. [cite_start]Farrar, Straus and Giroux[cite: 81].
+- Chaiken, S. (1980). Heuristic versus systematic information processing and the use of source versus message cues in persuasion. [cite_start] Journal of Personality and Social Psychology [cite: 82, 83, 84].
+- Heartfield, R., & Loukas, G. (2015). A Taxonomy of Cyber-Physical Social Engineering Attacks. [cite_start]*IEEE Communications Surveys & Tutorials [cite: 84, 85].
+Cybersecurity and Infrastructure Security Agency (CISA). (2023-2025). Mitigating Advanced Phishing and Session Hijacking Vectors via Phishing-Resistant MFA Architectures. [cite_start]Joint NSA/CISA Technical Advisory Frameworks[cite: 86, 87].
+
+---
+Disclaimer: Core research pipelines, threat modeling text structures, and documentation formatting within this module were optimized with the assistance of generative artificial intelligence tools under human review and engineering oversight.
